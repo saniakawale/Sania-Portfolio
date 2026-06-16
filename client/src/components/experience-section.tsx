@@ -3,7 +3,7 @@ export default function ExperienceSection() {
     {
       title: "AI Software Engineering Intern",
       company: "WeekendAI",
-      location: "Hong Kong",
+      location: "Remote",
       period: "June 2025 – August 2025",
       points: [
         "Built an autonomous research assistant using LangGraph, Python, OpenAI LLMs, and vector databases, creating multi-agent workflows for drafting and refining structured papers.",
@@ -39,7 +39,7 @@ export default function ExperienceSection() {
       title: "Teaching Assistant",
       company: "Organization of Programming Languages – UMD",
       location: "College Park, MD",
-      period: "August 2024 – Present",
+      period: "August 2024 – May 2026",
       points: [
         "Guided 400+ students weekly, grading assignments and hosting office hours, strengthening understanding of OCaml, Rust, and programming language concepts."
       ],
