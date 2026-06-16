@@ -1,21 +1,21 @@
-import { Brain, Code, Database } from "lucide-react";
+import { Brain, Database, Settings } from "lucide-react";
 
 export default function SkillsSection() {
   const skillCategories = [
     {
       icon: Brain,
-      title: "AI/ML",
-      skills: ["TensorFlow", "PyTorch", "Scikit-learn", "OpenAI", "LangGraph", "CrewAI"]
-    },
-    {
-      icon: Code,
-      title: "Programming",
-      skills: ["Python", "Java", "JavaScript", "TypeScript", "C", "Rust"]
+      title: "ML / Deep Learning",
+      skills: ["PyTorch", "TensorFlow", "Scikit-learn", "OpenAI", "LangGraph", "CrewAI", "SpaCy"]
     },
     {
       icon: Database,
-      title: "Data & Tools",
-      skills: ["Pandas", "NumPy", "Docker", "Git", "Azure AI", "React"]
+      title: "Data & NLP",
+      skills: ["Pandas", "NumPy", "Matplotlib", "MATLAB", "Statsmodels", "Tableau"]
+    },
+    {
+      icon: Settings,
+      title: "Infrastructure & Tools",
+      skills: ["Python", "Docker", "Git", "Azure AI", "Google Cloud Vision", "Java", "C"]
     }
   ];
 
@@ -23,7 +23,7 @@ export default function SkillsSection() {
     <section id="skills" className="py-20 bg-background" data-testid="skills-section">
       <div className="max-w-6xl mx-auto px-6">
         <h2 className="text-3xl md:text-4xl font-bold text-foreground text-center mb-16 fade-in" data-testid="skills-title">Technical Skills</h2>
-        
+
         <div className="grid md:grid-cols-3 gap-8">
           {skillCategories.map((category, index) => (
             <div key={index} className={`fade-in stagger-${index + 1}`} data-testid={`skill-category-${index}`}>
@@ -32,7 +32,7 @@ export default function SkillsSection() {
                 <h3 className="text-xl font-semibold text-foreground mb-6" data-testid={`skill-category-title-${index}`}>{category.title}</h3>
                 <div className="space-y-2">
                   {category.skills.map((skill, skillIndex) => (
-                    <span 
+                    <span
                       key={skillIndex}
                       className="tech-badge bg-muted text-muted-foreground px-3 py-1 rounded-full text-sm inline-block m-1"
                       data-testid={`skill-${index}-${skillIndex}`}

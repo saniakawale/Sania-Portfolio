@@ -24,26 +24,25 @@ export default function AboutSection() {
             >
               I'm a Computer Science student at the University of Maryland,
               College Park, pursuing a B.S. in CS with a minor in Computational
-              Finance. I'm passionate about AI/ML, web development, and building
-              systems that solve real-world problems.
+              Finance. I'm passionate about machine learning, NLP, and building
+              intelligent systems that solve real-world problems.
             </p>
             <p
               className="text-lg text-muted-foreground mb-6 leading-relaxed"
               data-testid="about-description-2"
             >
-              Over the past few years, I've explored everything from deploying
-              autonomous AI agents and developing ML frameworks to teaching
-              programming and tutoring hundreds of students. I enjoy learning
-              new technologies and applying them creatively to challenging
-              problems.
+              I've built contract extraction pipelines processing 500+ documents
+              with NLP, deployed multi-agent AI workflows, and developed ML
+              frameworks for climate research. I enjoy pushing the boundaries of
+              what's possible with data and models.
             </p>
             <p
               className="text-lg text-muted-foreground mb-8 leading-relaxed"
               data-testid="about-description-3"
             >
-              When I'm not coding, you'll find me diving into AI research,
-              exploring the latest tech tools, or working on personal projects
-              like predictive models and data-driven applications.
+              When I'm not training models, you'll find me writing about AI agent
+              frameworks, exploring the latest research papers, or working on
+              predictive modeling and data-driven applications.
             </p>
           </div>
         </div>

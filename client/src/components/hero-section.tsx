@@ -14,10 +14,10 @@ export default function HeroSection() {
             Hi, I'm Sania Kawale
           </h1>
           <p className="text-lg md:text-xl text-primary mb-6 font-medium" data-testid="hero-subtitle">
-            Computer Science student at University of Maryland | AI/ML Enthusiast | Full-Stack Developer
+            Machine Learning Engineer | CS @ University of Maryland
           </p>
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed" data-testid="hero-tagline">
-            I build intelligent systems, craft interactive web applications, and love turning complex problems into elegant solutions.
+            I build ML systems, deploy NLP pipelines, and design multi-agent AI workflows that turn complex data into actionable insights.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <button

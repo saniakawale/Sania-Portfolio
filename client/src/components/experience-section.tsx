@@ -62,7 +62,7 @@ export default function ExperienceSection() {
     <section id="experience" className="py-20 bg-background" data-testid="experience-section">
       <div className="max-w-6xl mx-auto px-6">
         <h2 className="text-3xl md:text-4xl font-bold text-foreground text-center mb-16 fade-in" data-testid="experience-title">Experience</h2>
-        
+
         <div className="space-y-12">
           {experiences.map((exp, index) => (
             <div key={index} className={`fade-in stagger-${index + 1} hover-lift`} data-testid={`experience-${index}`}>
@@ -84,7 +84,7 @@ export default function ExperienceSection() {
                 </div>
                 <div className="flex flex-wrap gap-2 mt-6">
                   {exp.tech.map((tech, techIndex) => (
-                    <span 
+                    <span
                       key={techIndex}
                       className="tech-badge bg-muted text-muted-foreground px-3 py-1 rounded-full text-sm"
                       data-testid={`experience-tech-${index}-${techIndex}`}

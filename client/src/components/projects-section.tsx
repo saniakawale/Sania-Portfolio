@@ -1,4 +1,4 @@
-import { TrendingUp, Shield } from "lucide-react";
+import { TrendingUp, Bot } from "lucide-react";
 
 export default function ProjectsSection() {
   const projects = [
@@ -14,15 +14,16 @@ export default function ProjectsSection() {
       tech: ["Python", "Pandas", "Statsmodels", "Matplotlib"]
     },
     {
-      icon: Shield,
-      title: "Food Allergy Checker Application",
-      description: "Developed a CLI app to check allergens in real-time from OpenFoodFacts with robust error handling and CI/CD integration.",
+      icon: Bot,
+      title: "AI Agent Framework Benchmark",
+      description: "Compared CrewAI, Google ADK, and LangGraph for building autonomous AI agents in academic research workflows.",
       points: [
-        "Developed a CLI app to check allergens in real-time from OpenFoodFacts.",
-        "Applied OOP principles, string matching, and error handling for a robust user experience.",
-        "Integrated CI/CD with Git, Docker, and Jenkins for smooth development and deployment."
+        "Benchmarked three leading AI agent frameworks (CrewAI, Google ADK, LangGraph) for autonomous research tasks.",
+        "Evaluated multi-agent orchestration, tool integration, and structured output generation across frameworks.",
+        "Published findings in a technical article analyzing trade-offs for real-world academic use cases."
       ],
-      tech: ["Python", "BeautifulSoup4", "Docker", "Jenkins"]
+      tech: ["LangGraph", "CrewAI", "Google ADK", "Python"],
+      link: "https://medium.com/@saniakawale/ai-agents-in-academia-crewai-google-adk-langgraph-compared-53efbc1d5727"
     }
   ];
 
@@ -30,11 +31,11 @@ export default function ProjectsSection() {
     <section id="projects" className="py-20 bg-muted" data-testid="projects-section">
       <div className="max-w-6xl mx-auto px-6">
         <h2 className="text-3xl md:text-4xl font-bold text-foreground text-center mb-16 fade-in" data-testid="projects-title">Featured Projects</h2>
-        
+
         <div className="grid md:grid-cols-2 gap-8">
           {projects.map((project, index) => (
             <div key={index} className={`fade-in stagger-${index + 1} hover-lift`} data-testid={`project-${index}`}>
-              <div className="bg-card border border-border rounded-2xl p-8 h-full">
+              <div className="bg-card border border-border rounded-2xl p-8 h-full flex flex-col">
                 <div className="mb-6">
                   <project.icon className="w-8 h-8 text-primary mb-4" data-testid={`project-icon-${index}`} />
                   <h3 className="text-xl font-semibold text-foreground mb-2" data-testid={`project-title-${index}`}>{project.title}</h3>
@@ -45,16 +46,29 @@ export default function ProjectsSection() {
                     <p key={pointIndex} data-testid={`project-point-${index}-${pointIndex}`}>• {point}</p>
                   ))}
                 </div>
-                <div className="flex flex-wrap gap-2">
-                  {project.tech.map((tech, techIndex) => (
-                    <span 
-                      key={techIndex}
-                      className="tech-badge bg-muted text-muted-foreground px-3 py-1 rounded-full text-sm"
-                      data-testid={`project-tech-${index}-${techIndex}`}
+                <div className="mt-auto">
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    {project.tech.map((tech, techIndex) => (
+                      <span
+                        key={techIndex}
+                        className="tech-badge bg-muted text-muted-foreground px-3 py-1 rounded-full text-sm"
+                        data-testid={`project-tech-${index}-${techIndex}`}
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+                  {"link" in project && project.link && (
+                    <a
+                      href={project.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-primary font-medium hover:underline text-sm"
+                      data-testid={`project-link-${index}`}
                     >
-                      {tech}
-                    </span>
-                  ))}
+                      Read Article →
+                    </a>
+                  )}
                 </div>
               </div>
             </div>
