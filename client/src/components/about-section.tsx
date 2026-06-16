@@ -5,7 +5,7 @@ export default function AboutSection() {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="fade-in stagger-1">
             <img
-              src="/sania-headshot.jpeg"
+              src="/495A5325.jpg"
               alt="Sania Kawale's professional headshot"
               className="rounded-2xl shadow-lg w-full max-w-md mx-auto hover-lift"
               data-testid="profile-image"
