@@ -14,7 +14,7 @@ export default function HeroSection() {
             Hi, I'm Sania Kawale
           </h1>
           <p className="text-lg md:text-xl text-primary mb-6 font-medium" data-testid="hero-subtitle">
-            Machine Learning Engineer | MCS @ University of Illinois Urbana-Champaign
+            Machine Learning Engineer | CS @ University of Illinois Urbana-Champaign
           </p>
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed" data-testid="hero-tagline">
             I build ML systems, deploy NLP pipelines, and design multi-agent AI workflows that turn complex data into actionable insights.
